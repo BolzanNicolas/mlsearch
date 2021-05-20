@@ -35,8 +35,8 @@
 		379D9225265602B200CF9647 /* AttributeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D9223265602B200CF9647 /* AttributeTableViewCell.swift */; };
 		379D9226265602B200CF9647 /* AttributeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379D9224265602B200CF9647 /* AttributeTableViewCell.xib */; };
 		379D92282656044200CF9647 /* ItemDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D92272656044200CF9647 /* ItemDetailTableView.swift */; };
-		379D922B2656077E00CF9647 /* ItemDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D92292656077E00CF9647 /* ItemDetailTableViewController.swift */; };
-		379D922C2656077E00CF9647 /* ItemDetailTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379D922A2656077E00CF9647 /* ItemDetailTableViewController.xib */; };
+		379D922F265613D300CF9647 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D922D265613D300CF9647 /* ItemDetailViewController.swift */; };
+		379D9230265613D300CF9647 /* ItemDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379D922E265613D300CF9647 /* ItemDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,8 +72,8 @@
 		379D9223265602B200CF9647 /* AttributeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributeTableViewCell.swift; sourceTree = "<group>"; };
 		379D9224265602B200CF9647 /* AttributeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeTableViewCell.xib; sourceTree = "<group>"; };
 		379D92272656044200CF9647 /* ItemDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTableView.swift; sourceTree = "<group>"; };
-		379D92292656077E00CF9647 /* ItemDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailTableViewController.swift; sourceTree = "<group>"; };
-		379D922A2656077E00CF9647 /* ItemDetailTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailTableViewController.xib; sourceTree = "<group>"; };
+		379D922D265613D300CF9647 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailViewController.swift; sourceTree = "<group>"; };
+		379D922E265613D300CF9647 /* ItemDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +196,8 @@
 			children = (
 				379D921E2655FEE100CF9647 /* Cells */,
 				379D92272656044200CF9647 /* ItemDetailTableView.swift */,
-				379D92292656077E00CF9647 /* ItemDetailTableViewController.swift */,
-				379D922A2656077E00CF9647 /* ItemDetailTableViewController.xib */,
+				379D922D265613D300CF9647 /* ItemDetailViewController.swift */,
+				379D922E265613D300CF9647 /* ItemDetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 			files = (
 				379D9226265602B200CF9647 /* AttributeTableViewCell.xib in Resources */,
 				37437FE2265489E600E3ED8E /* ResultsTableViewController.xib in Resources */,
-				379D922C2656077E00CF9647 /* ItemDetailTableViewController.xib in Resources */,
+				379D9230265613D300CF9647 /* ItemDetailViewController.xib in Resources */,
 				37437FF126548ADD00E3ED8E /* SearchTableViewController.xib in Resources */,
 				37437FC4265477C300E3ED8E /* LaunchScreen.storyboard in Resources */,
 				37437FEB26548A1F00E3ED8E /* ResultTableViewCell.xib in Resources */,
@@ -384,12 +384,12 @@
 				379D92122655D15600CF9647 /* ResultsTableView.swift in Sources */,
 				37437FF426548BF200E3ED8E /* SearchTableViewCell.swift in Sources */,
 				37437FD826547E6000E3ED8E /* Seller.swift in Sources */,
+				379D922F265613D300CF9647 /* ItemDetailViewController.swift in Sources */,
 				37437FFB2654A6CB00E3ED8E /* NSAttributedString+Extension.swift in Sources */,
 				379D9225265602B200CF9647 /* AttributeTableViewCell.swift in Sources */,
 				37437FED26548AB500E3ED8E /* SearchViewModel.swift in Sources */,
 				37437FDA2654832400E3ED8E /* APIClient.swift in Sources */,
 				37437FF026548ADD00E3ED8E /* SearchTableViewController.swift in Sources */,
-				379D922B2656077E00CF9647 /* ItemDetailTableViewController.swift in Sources */,
 				37437FF82654913500E3ED8E /* Requests.swift in Sources */,
 				379D921D2655F83400CF9647 /* BaseNavigationController.swift in Sources */,
 				37437FEA26548A1F00E3ED8E /* ResultTableViewCell.swift in Sources */,

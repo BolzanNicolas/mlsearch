@@ -1,14 +1,18 @@
 //
-//  ItemDetailTableViewController.swift
+//  ItemDetailViewController.swift
 //  MLSearch
 //
-//  Created by Nicolas Bolzan on 19/05/2021.
+//  Created by Nicolas Bolzan on 20/05/2021.
 //
+
 
 import UIKit
 
-final class ItemDetailTableViewController: UITableViewController {
+final class ItemDetailViewController: UIViewController {
 
+    // MARK: - Views -
+    @IBOutlet weak var tableView: UITableView!
+    
     // MARK: - Attributes -
     internal var item: MLItem
     
@@ -36,6 +40,9 @@ final class ItemDetailTableViewController: UITableViewController {
     
     // MARK: - Configuration -
     private func configureTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        
         let headerNib = UINib(nibName: String(describing: ItemHeaderTableViewCell.self), bundle: nil)
         tableView.register(headerNib,
                            forCellReuseIdentifier: String(describing: ItemHeaderTableViewCell.self))

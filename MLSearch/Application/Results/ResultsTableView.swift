@@ -23,7 +23,7 @@ extension ResultsTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailVC = ItemDetailTableViewController(items[indexPath.row])
+        let detailVC = ItemDetailViewController(items[indexPath.row])
         navigationController?.pushViewController(detailVC, animated: true)
     }
     

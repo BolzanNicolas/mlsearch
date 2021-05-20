@@ -7,13 +7,13 @@
 
 import UIKit
 
-extension ItemDetailTableViewController {
+extension ItemDetailViewController: UITableViewDelegate, UITableViewDataSource {
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return Section.allCases.count
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch Section(rawValue: section) {
         case .header: return 1
         case .attributes: return item.attributes?.count ?? 0
@@ -21,7 +21,7 @@ extension ItemDetailTableViewController {
         }
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch Section(rawValue: indexPath.section) {
         case .header:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: ItemHeaderTableViewCell.self)) as? ItemHeaderTableViewCell else {
@@ -43,14 +43,6 @@ extension ItemDetailTableViewController {
             return UITableViewCell()
         }
         
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        switch Section(rawValue: indexPath.section) {
-        case .header: return 420
-        case .attributes: return 44
-        default: return 0
-        }
     }
     
 }
